@@ -98,6 +98,7 @@ public class MainActivity extends AppCompatActivity
     private static final String TAG = "MainActivity";
     public static final String MESSAGES_CHILD = "messages";
     private static final int REQUEST_INVITE = 1;
+    private static final int REQUEST_IMAGE = 2;
     public static final int DEFAULT_MSG_LENGTH_LIMIT = 10;
     public static final String ANONYMOUS = "anonymous";
     private static final String MESSAGE_SENT_EVENT = "message_sent";
@@ -106,6 +107,7 @@ public class MainActivity extends AppCompatActivity
     private SharedPreferences mSharedPreferences;
     private GoogleApiClient mGoogleApiClient;
     private static final String MESSAGE_URL = "http://friendlychat.firebase.google.com/message/";
+    private static final String LOADING_IMAGE_URL = "https://www.google.com/images/spin-32.gif";
 
     private Button mSendButton;
     private RecyclerView mMessageRecyclerView;
@@ -266,7 +268,7 @@ public class MainActivity extends AppCompatActivity
                 FriendlyMessage friendlyMessage = new
                         FriendlyMessage(mMessageEditText.getText().toString(),
                         mUsername,
-                        mPhotoUrl);
+                        mPhotoUrl, null);
                 mFirebaseDatabaseReference.child(MESSAGES_CHILD)
                         .push().setValue(friendlyMessage);
                 mMessageEditText.setText("");
