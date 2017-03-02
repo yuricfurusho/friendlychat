@@ -225,8 +225,10 @@ public class MainActivity extends AppCompatActivity
                             .into(viewHolder.messengerImageView);
                 }
 
-                // write this message to the on-device index
-                FirebaseAppIndex.getInstance().update(getMessageIndexable(friendlyMessage));
+                if (friendlyMessage.getText() != null) {
+                    // write this message to the on-device index
+                    FirebaseAppIndex.getInstance().update(getMessageIndexable(friendlyMessage));
+                }
 
                 // log a view action on it
                 FirebaseUserActions.getInstance().end(getMessageViewAction(friendlyMessage));
