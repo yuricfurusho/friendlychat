@@ -8,18 +8,18 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:77651385556:android:457fc48c1510809a",
+        "mobilesdk_app_id": "1:77651385556:android:372d5e1a703db93f",
         "android_client_info": {
-          "package_name": "com.google.firebase.codelab.friendlychat.yuricfurusho.debug"
+          "package_name": "br.com.yuricfurusho.friendlychat"
         }
       },
       "oauth_client": [
         {
-          "client_id": "77651385556-srkij1po26s7tk57159p8bnc5s5m4ija.apps.googleusercontent.com",
+          "client_id": "77651385556-8njmjcs1np3qq6l218mf2c2g2hpailfb.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.google.firebase.codelab.friendlychat.yuricfurusho.debug",
-            "certificate_hash": "c1665693dfde0bb9dced76d765b710dc1f3f0d41"
+            "package_name": "br.com.yuricfurusho.friendlychat",
+            "certificate_hash": "7f136db1c59c8dedee915e1dde110ed423d3f094"
           }
         },
         {
@@ -52,18 +52,18 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:77651385556:android:c149438117874577",
+        "mobilesdk_app_id": "1:77651385556:android:595d096dcbbca2de",
         "android_client_info": {
-          "package_name": "com.google.firebase.codelab.friendlychat.yuricfurusho"
+          "package_name": "br.com.yuricfurusho.friendlychat.debug"
         }
       },
       "oauth_client": [
         {
-          "client_id": "77651385556-kpr6ujlo02r5rn14ne21ebm2nbp8jukt.apps.googleusercontent.com",
+          "client_id": "77651385556-9ojmi3ao3a2vuph6f2vik9ma10mmhhdg.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.google.firebase.codelab.friendlychat.yuricfurusho",
-            "certificate_hash": "7f136db1c59c8dedee915e1dde110ed423d3f094"
+            "package_name": "br.com.yuricfurusho.friendlychat.debug",
+            "certificate_hash": "c1665693dfde0bb9dced76d765b710dc1f3f0d41"
           }
         },
         {
