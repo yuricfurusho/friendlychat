@@ -491,7 +491,7 @@ public class MainActivity extends AppCompatActivity
             if (resultCode == RESULT_OK) {
                 // Use Firebase Measurement to log that invitation was sent.
                 Bundle payload = new Bundle();
-                payload.putString(FirebaseAnalytics.Param.VALUE, "inv_sent");
+                payload.putString(FirebaseAnalytics.Param.VALUE, "sent");
 
                 // Check how many invitations were sent and log.
                 String[] ids = AppInviteInvitation.getInvitationIds(resultCode, data);
@@ -499,7 +499,7 @@ public class MainActivity extends AppCompatActivity
             } else {
                 // Use Firebase Measurement to log that invitation was not sent
                 Bundle payload = new Bundle();
-                payload.putString(FirebaseAnalytics.Param.VALUE, "inv_not_sent");
+                payload.putString(FirebaseAnalytics.Param.VALUE, "not sent");
                 mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SHARE, payload);
 
                 // Sending failed or it was canceled, show failure message to the user
